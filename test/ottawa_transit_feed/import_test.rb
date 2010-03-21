@@ -4,11 +4,8 @@ module OttawaTransitFeed
   class ImportTest < ActiveSupport::TestCase
 
     def setup
-      OttawaTransitFeed.import "test/fixtures/transit_feeds/oc_transpo"
-    end
-
-    def teardown
       OttawaTransitFeed.clear_database
+      OttawaTransitFeed.import "test/fixtures/transit_feeds/oc_transpo"
     end
 
     test "4 calendars should be imported" do 
