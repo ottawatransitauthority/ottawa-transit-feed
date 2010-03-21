@@ -13,8 +13,9 @@ module OttawaTransitFeed
     alias_attribute :destination, :long_name
 
     before_validation :set_route_id
+    before_validation :set_destination
   
-    validates_presence_of :number, :heading, :stop_ids, :route_id
+    validates_presence_of :number, :heading, :stop_ids, :route_id, :destination
     
     class << self
       def import (feed=nil)
@@ -39,16 +40,38 @@ module OttawaTransitFeed
     end
     
     def headsign
-      OCTranspo::Headsign.find(number, heading, stops.map(&:attributes).each(&:symbolize_keys!))
+      if number.present? && destination.present?
+        "#{number} #{destination}"
+      else
+        "#{number} [#{heading}]"
+      end
     end
-    
+
     def stops
       stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
     end
     
+    protected
+    
     def set_route_id
       if route_id.blank? && number.present? && heading.present? && stop_ids.present?
         self.route_id = self.class.identifier_for number, heading, stop_ids
+      end
+    end
+    
+    def set_destination
+      if destination.blank?
+        if headsign = find_headsign
+          headsign_words = headsign.split " "
+          self.number      = headsign_words.shift
+          self.destination = headsign_words * " "
+        end
+      end
+    end
+    
+    def find_headsign
+      if number.present? && heading.present? && stops.present?
+        OCTranspo::Headsign.find(number, heading, stops.map(&:attributes).each(&:symbolize_keys!))
       end
     end
   end
