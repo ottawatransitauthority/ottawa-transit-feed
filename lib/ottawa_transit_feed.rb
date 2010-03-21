@@ -14,7 +14,8 @@ module OttawaTransitFeed
   # Import a transit feed into the database.
   def import (feed)
     record_classes.each do |records|
-      records.import! feed
+      report = records.import(feed)
+      puts report if env == :development
     end
   end
 
