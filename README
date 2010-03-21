@@ -10,6 +10,9 @@ What does it do?
 How do I do it?
 
   Step 1. 
+  Run `rake` to setup the log, db and transit_feed folders, create the database and run the test suite.
+
+  Step 2.
   `rake download` to get the latest OC Transpo data feed. It will be saved in the transit_feeds folder.
   
   Step 2. 
