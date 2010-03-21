@@ -1,0 +1,28 @@
+This codebase is used to create the Ottawa Transit Feed
+http://ottawatransitauthority.ca/feed
+
+What does it do?
+
+  • It imports the official OC Transpo feed into an SQLite database. 
+  • It applies a slew of corrections to the data.
+  • It exports an authoritative dataset as a General Transit Data Feed.
+
+How do I do it?
+
+  Step 1. 
+  `rake download` to get the latest OC Transpo data feed. It will be saved in the transit_feeds folder.
+  
+  Step 2. 
+  `rake import` to import the official data. This will take a LONG time.
+  
+  Step 3. 
+  `rake export` to export the authoritative dataset. The exported feed will be saved in the transit_feeds folder.
+  
+
+Read up on the General Transit Data Feed format:
+http://code.google.com/transit/spec/transit_feed_specification.html
+
+Ottawa Transit Feed was extracted from OC Transpo Network:
+http://octranspo.net
+
+© 2010 Craig Davey, released under the MIT license.
