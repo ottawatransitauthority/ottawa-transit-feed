@@ -14,22 +14,16 @@ module OttawaTransitFeed
     before_validation :set_route
     before_validation :set_headsign
   
-    validates_presence_of :route, :service_id, :trip_id, :stop_ids
+    validates_presence_of :route, :service_id, :trip_id, :stops
     
     def stop_ids
-      StopTime.find_all_by_trip_id(trip_id, :order => :stop_sequence).map(&:stop_id)
+      stops.map(&:stop_id)
     end
     
     def stops
-      @stops ||= find_stops
+      @stops ||= StopTime.find_all_by_trip_id(trip_id, :order => :stop_sequence).map(&:stop)
     end
-    
-    def find_stops
-      if stop_ids.present?
-        stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
-      end
-    end
-    
+        
     def route_id= (route_id)
       self.original_route_id = route_id.to_s
       super route_id.to_s.split('-').first
