@@ -955,7 +955,7 @@ module OCTranspo
     end
 
     def route_128 (heading, stops)
-      last_stop = locations.last
+      last_stop = stops.last
       case 
       when last_stop.number == "3023" # Hurdman Station
         "128 HURDMAN"
