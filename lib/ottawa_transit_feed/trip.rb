@@ -40,7 +40,7 @@ module OttawaTransitFeed
     protected
 
     def set_route
-      if route.blank? && route_id.present? && route_heading.present? && stop_ids.present?
+      if route.nil? && route_id.present?
         self.route = OttawaTransitFeed::Route.find_or_create!(route_id)
       end
     end
