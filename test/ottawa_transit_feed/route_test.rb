@@ -7,6 +7,34 @@ module OttawaTransitFeed
       OttawaTransitFeed.clear_database
     end
     
+    test "can’t validate route without number" do
+      origin      = Stop.create! :name => "GREENBORO 1A", :stop_id => "RF900"    
+      destination = Stop.create! :name => "MAPLE LANE / SPRINGFIELD", :stop_id => "AA380"
+
+      assert Route.new(:heading => "OTTAWA-ROCKCLIFFE", :stop_ids => [origin.stop_id, destination.stop_id]).invalid?
+    end
+
+    test "can’t validate route without a heading" do
+      origin      = Stop.create! :name => "GREENBORO 1A", :stop_id => "RF900"    
+      destination = Stop.create! :name => "MAPLE LANE / SPRINGFIELD", :stop_id => "AA380"
+
+      assert Route.new(:number => 1, :stop_ids => [origin.stop_id, destination.stop_id]).invalid?
+    end
+
+    test "can’t validate route without stops" do
+      origin      = Stop.create! :name => "GREENBORO 1A", :stop_id => "RF900"    
+      destination = Stop.create! :name => "MAPLE LANE / SPRINGFIELD", :stop_id => "AA380"
+
+      assert Route.new(:number => 1, :heading => "OTTAWA-ROCKCLIFFE").invalid?
+    end
+    
+    test "can’t validate route with empty array of stops" do
+      origin      = Stop.create! :name => "GREENBORO 1A", :stop_id => "RF900"    
+      destination = Stop.create! :name => "MAPLE LANE / SPRINGFIELD", :stop_id => "AA380"
+
+      assert Route.new(:number => 1, :heading => "OTTAWA-ROCKCLIFFE", :stop_ids => []).invalid?
+    end
+    
     test "set headsign of a 1 OTTAWA-ROCKCLIFFE route" do
       origin      = Stop.create! :name => "GREENBORO 1A", :stop_id => "RF900"    
       destination = Stop.create! :name => "MAPLE LANE / SPRINGFIELD", :stop_id => "AA380"

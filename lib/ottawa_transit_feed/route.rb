@@ -48,7 +48,7 @@ module OttawaTransitFeed
     end
 
     def stops
-      @stops ||= stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
+      @stops ||= find_stops
     end
     
     protected
@@ -72,6 +72,12 @@ module OttawaTransitFeed
     def find_headsign
       if number.present? && heading.present? && stops.present?
         OCTranspo::Headsign.find(number, heading, stops.map(&:attributes).each(&:symbolize_keys!))
+      end
+    end
+    
+    def find_stops
+      if stop_ids.present?
+        stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
       end
     end
   end
