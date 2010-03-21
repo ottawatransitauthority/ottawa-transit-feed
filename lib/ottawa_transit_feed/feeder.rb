@@ -24,7 +24,7 @@ module OttawaTransitFeed::Feeder
         record.save!
       end
     end
-    "#{self.class.name}.import completed in #{elapsed}"
+    "#{name}.import completed in #{elapsed}"
   end
   
   def export (feed)
