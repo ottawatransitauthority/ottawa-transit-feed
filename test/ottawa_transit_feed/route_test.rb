@@ -46,7 +46,8 @@ module OttawaTransitFeed
       end
       
       assert_equal "1", route.number
-      assert_equal "OTTAWA ROCKCLIFFE", route.destination
+      assert_equal "1", route.short_name
+      assert_equal "OTTAWA ROCKCLIFFE", route.long_name
       assert_equal "1 OTTAWA ROCKCLIFFE", route.headsign
     end
     
@@ -60,9 +61,9 @@ module OttawaTransitFeed
         route.stop_ids = [origin.stop_id, destination.stop_id]        
       end
       
-      assert_equal "1X", route.number
+      assert_equal "1", route.number
       assert_equal "DOWNTOWN", route.destination
-      assert_equal "1X DOWNTOWN", route.headsign
+      assert_equal "1 DOWNTOWN", route.headsign
     end
     
     test "set headsign of a 1 SOUTH KEYS route" do

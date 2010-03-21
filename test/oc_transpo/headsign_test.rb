@@ -9,7 +9,7 @@ module OCTranspo
     end
 
     test "1X DOWNTOWN headsign" do
-      assert_equal "1X DOWNTOWN", OCTranspo::Headsign.find(1, "OTTAWA-ROCKCLIFFE", [{:code => "3009"}])
+      assert_equal "1 DOWNTOWN", OCTranspo::Headsign.find(1, "OTTAWA-ROCKCLIFFE", [{:code => "3009"}])
     end
 
     test "1 SOUTH KEYS headsign" do
