@@ -48,7 +48,7 @@ module OttawaTransitFeed
     end
 
     def stops
-      stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
+      @stops ||= stop_ids.map { |stop_id| Stop.find_by_stop_id!(stop_id) }
     end
     
     protected
