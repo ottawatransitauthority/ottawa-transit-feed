@@ -15,7 +15,7 @@ module OttawaTransitFeed
   def import (feed)
     record_classes.each do |records|
       report = records.import(feed)
-      puts report if env == :development
+      puts report if report && env == :development
     end
   end
 
