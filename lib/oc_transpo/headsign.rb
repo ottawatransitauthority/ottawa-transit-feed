@@ -17,7 +17,7 @@ module OCTranspo
         when "8789" # Maple Grove Rd. at Springfield Rd.
           "1 OTTAWA ROCKCLIFFE"
         when "3009" # Rideau Centre
-          "1X DOWNTOWN"
+          "1 DOWNTOWN"
         when "3037" # Greenboro Station
           "1 SOUTH KEYS"
         when "3034" # Billings Bridge Station
@@ -55,7 +55,7 @@ module OCTranspo
       when "3023" # Hurdman Station
         "4 HURDMAN"
       when "5813" # Campus Ave. & Library Rd.
-        "4X CARLETON"
+        "4 CARLETON"
       end
     end
 
@@ -127,7 +127,7 @@ module OCTranspo
       when "7687" # Bank St. & Slater St.
         "12 DOWNTOWN"
       when "3009" # Rideau Centre
-        "12X RIDEAU CENTRE"
+        "12 RIDEAU CENTRE"
       when "3027" # Blair Station
         "12 BLAIR"
       end
