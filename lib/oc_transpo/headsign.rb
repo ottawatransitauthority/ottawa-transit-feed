@@ -10,15 +10,19 @@ module OCTranspo
     end
   
     def route_1 (heading, stops)
-      case stops.last[:code]
-      when "8789" # Maple Grove Rd. at Springfield Rd.
-        "1 OTTAWA ROCKCLIFFE"
-      when "3009" # Rideau Centre
-        "1X DOWNTOWN"
-      when "3037" # Greenboro Station
-        "1 SOUTH KEYS"
-      when "3034" # Billings Bridge Station
-        "1X BILLINGS BRIDGE"
+      if stops.last[:stop_id] == "DT007" # Somerset St. at O’Connor St.
+        "1 DOWNTOWN"
+      else
+        case stops.last[:code]
+        when "8789" # Maple Grove Rd. at Springfield Rd.
+          "1 OTTAWA ROCKCLIFFE"
+        when "3009" # Rideau Centre
+          "1X DOWNTOWN"
+        when "3037" # Greenboro Station
+          "1 SOUTH KEYS"
+        when "3034" # Billings Bridge Station
+          "1X BILLINGS BRIDGE"
+        end
       end
     end
 

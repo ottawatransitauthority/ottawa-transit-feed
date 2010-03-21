@@ -18,6 +18,14 @@ module OttawaTransitFeed
     validates_presence_of :number, :heading, :stop_ids, :route_id, :destination
     
     class << self
+      
+      def save_all_records
+        Route.all.each do |route|
+          puts route.inspect
+          route.save!
+        end
+      end
+      
       def import (feed=nil)
         # Routes are created durring Trip.import
       end
