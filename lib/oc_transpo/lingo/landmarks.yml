@@ -1,0 +1,204 @@
+# Transit Stations
+"BASELINE": "Baseline Station"
+"BAYSHORE": "Bayshore Station"
+"BAYVIEW": "Bayview Station"
+"BILLINGS BRIDGE": "Billings Bridge Station"
+"BLAIR": "Blair Station"
+"CAMPUS": "Campus Station"
+"CYRVILLE": "Cyrville Station"
+"DOMINION": "Dominion Station"
+"EAGLESON": "Eagleson Station"
+"FALLOWFIELD": "Fallowfield Station"
+"GREENBORO": "Greenboro Station"
+"HERON": "Heron Station"
+"HURDMAN": "Hurdman Station"
+"IRIS": "Iris Station"
+"LAURIER": "Laurier Station"
+"LEBRETON": "Lebreton Station"
+"LEES": "Lees Station"
+"LINCOLN FIELDS": "Lincoln Fields Station"
+"LYCÉE CLAUDEL": "Lycée Claudel Station"
+"MACKENZIE KING": "Mackenzie King Station"
+"PINECREST": "Pinecrest Station"
+"PLEASANT PARK": "Pleasant Park Station"
+"QUEENSWAY": "Queensway Station"
+"RIVERSIDE": "Riverside Station"
+"SMYTH": "Smyth Station"
+"SOUTH KEYS": "South Keys Station"
+"STRANDHERD": "Strandherd Station"
+"TERRY FOX": "Terry Fox Station"
+"TRAIN": "Train Station"
+"TRIM": "Trim Station"
+"WALKLEY": "Walkley Station"
+"WESTBORO": "Westboro Station"
+"CARLETON": "Carleton Station"
+"CARLING": "Carling Station"
+"CONFEDERATION": "Confederation Station"
+"PLACE D’ORLÉANS": "Place d’Orléans Station"
+"ORLÉANS": "Place d’Orléans Station"
+"ST LAURENT": "St. Laurent Station"
+"TUNNEY'S PASTURE": "Tunney’s Pasture Station"
+
+# Park and Ride
+"EAGLESON / EAGLESON PARK & RIDE - PARC-O-BUS": "Eagleson Rd. at Eagleson Station Park & Ride"
+
+# Fix broken stations platforms
+"TUNNEY'S PASTURE4A": "Tunney’s Pasture Station, Platform 4A"
+"HERON 4A ": "Heron Station, Platform 4A"
+
+# Rideau Centre platforms
+"RIDEAU 3A": "Rideau Centre, Platform 3A"
+"RIDEAU 4A": "Rideau Centre, Platform 4A"
+
+# Hunt Club Loop platforms
+"HUNT CLUB LOOP - BOUCLE / STOP - ARRÊT 1A": "Hunt Club Loop, Platform 1A"
+"BOUCHE HUNT CLUB LOOP - STOP / ARRÊT 2A": "Hunt Club Loop, Platform 2A"
+
+# Loops
+"LOOP / MCEWEN": "McKewen Ave. Loop"
+"SOLANDT LOOP": "Solandt Rd. Loop"
+
+# OC Transpo garages
+"MERIVALE GARAGE / GARAGE MERIVALE": "Colonnade Rd. at OC Transpo Garage"
+"COLONNADE / GARAGE O.C. TRANSPO GARAGE": "Colonnade Rd. at OC Transpo Garage"
+
+# Fix intersections
+"FALLOWFIELD / STATION FALLOWFIELD STATION": "Fallowfield Rd. at Fallowfield Station"
+"ALBERT / STATION BAYVIEW STATION": "Albert St. at Bayview Station"
+"CARLING / ACRES SIDE": "Carling Ave. at Holly Acres Rd."
+"CAMPUS / COMMONS": "Campus Ave. at Library Rd."
+"OLD STRANDHERD / HOULAHAN": "Opal Ln. at Houlahan St."
+"MONTRÉAL / NRC": "Montreal Rd. at McArthur Ave."
+"BANK / VISITOR": "Bank St. at South Keys Shopping Centre"
+"BLAIR / DAVIDSON":   "Blair Rd. at Davidson Dr."
+"BLAIR E / DAVIDSON": "Blair Rd. at Davidson Dr."
+"CARLING / DAVIDSON":         "Carling Ave. at Davidsons Side Rd."
+"CARLING / DAVIDSON''S SIDE": "Carling Ave. at Davidsons Side Rd."
+"CARLING / STATION O-TRAIN STATION": "Carling Ave. at O-Train"
+"MORGAN''S GRANT / FLAMBOROUGH": "Morgan’s Grant Way at. Flamborough Way"
+"PROM D'ORLEANS / CENTRUM": "Place d’Orleans Dr. at Centrum Blvd."
+"RUE IRIS ST./ INTERSECTION TRANSIT": "Iris St. at Transitway"
+"BRONSON / HERON": "Bronson Ave. at Confederation Station"
+"STOP/ARRÊT  ON/SUR  HERON AT/À CONFEDERATION STN.": "Heron Rd. at Confederation Station"
+"HERON / BRONSON":                                   "Heron Rd. at Confederation Station"
+"SHEA / SHEA / COMPLEXE GOULBOURN COMPLEX": "Shea Rd. at Goulbourn Recreation Complex"
+"SHEA / COMPLEXE GOULBOURN COMPLEX":        "Shea Rd. at Goulbourn Recreation Complex"
+"PRINCE OF WALES / MUSÉE D'/AGRICULTURE / MUSEUM": "Prince Of Wales Dr. at Agriculture Museum"
+"HWY 417/MOODIE (PRESS BUTTON/APPUYEZ LE BOUTON)": "Highway 417 at Moodie Dr."
+
+# Fix forward slash without whitespace.
+"HERON/EDGEHILL": "Heron Rd. at Edge Hill Pl."
+"LONGFIELD/STRANDHERD": "Longfields Dr. at Strandherd Dr."
+"CASTLEFRANK/HAZELDEAN": "Castlefrank Rd. at Hazeldean Rd."
+"GRASSY PLAINS/STONEHAVEN": "Grassy Plains Dr. at Stonehaven Dr."
+"GOLDRIDGE/NORGOLD": "Goldridge Dr. at Norgold Crescent"
+"STEVENAGE/GLENFIELD": "Stevenage Dr. at Glenfield Dr."
+
+# Fix forward slash without leading whitespace.
+"HAWTHORNE/ AD. 3101": "3101 Hawthorne Rd."
+"LONGFIELDS/ PROTHURSH": "Longfields Dr. at Portrush Ave."
+"JEANNE D'ARC/ AVIGNON": "Jeanne d’Arc Blvd. at Avignon Ct."
+"SWANSEA/ PATHWAY - SENTIER": "Swansea Crescent at Pathway"
+"MANN/ CHAPEL": "Mann Ave. at Chapel Rd."
+
+# Fix forward slash without trailing whitespace.
+"STAR TOP /INNES": "Star Top Rd. at Innes Rd."
+
+# Fix node
+"NODE4518": "Dauphin Rd. at Hillcrest High School"
+
+# Airport
+"AIRPORT STOP / ARRÊT AÉROPORT": "Ottawa International Airport"
+"AIRPORT/ AIR CANADA CARGO": "Airport Pkwy. at Air Canada Cargo"
+"AIRPORT / UPLANDS - ON REQUEST/SUR DEMANDE": "Airport Pkwy. at Uplands Dr."
+
+# Cemetaries
+"CIMETIÈRE NOTRE DAME CEMETERY": "Notre Dame Cemetery"
+
+# Government properties
+"SHIRLEY'S BAY": "Shirley’s Bay Campus"
+"TERRASSES DE LA CHAUDIÈRE": "Terrasses de la Chaudière"
+"NRC GUARDHOUSE - POSTE DE GARDE":     "NRC Building M-2"
+"NRC ROAD MACALLUM/ ÉDIFICE M 1 BLDG": "NRC Building M-2"
+"NRC ROAD BALLARD / BLAIR": "Ballard Rd. at Blair Rd."
+"NRC ROAD BALLARD / ÉDIFICE M 50 BLDG":  "Ballard Rd. at NRC Buidling M-50"
+"NRC ROAD BALLARD /  ÉDIFICE M 50 BLDG": "Ballard Rd. at NRC Buidling M-50"
+"NRC ROAD HOWLETT  / ÉDIFICE M21 BLDG": "Howlett Rd. at NRC Building M-21"
+"NRC ROAD HOWLETT  / ÉDIFICE M36 BLDG": "Howlett Rd. at NRC Building M-36"
+"NRC ROAD HOWLETT / ÉDIFICE M 36 BLDG": "Howlett Rd. at NRC Building M-36"
+"NRC ROAD LATHE /  ÉDIFICE M 54 BLDG": "Lathe Rd. at NRC Buidling M-54"
+"NRC ROAD LATHE / ÉDIFICE M 55 BLDG": "Lathe Rd. at NRC Buidling M-55"
+"NRC ROAD LATHE /  ÉDIFICE M 79 BLDG": "Lathe Rd. at NRC Building M-79"
+
+# Health Centres
+"HÔPITAL PERLEY HOSPITAL": "Perley Rideau Veterans’ Health Centre"
+
+# Hospitals
+"HÔPITAL D'ENFANT-CHILDRENS HOSPITAL": "Children’s Hospital of Eastern Ontario"
+"HÔPITAL CIVIC HOSPITAL": "Ottawa Civic Hospital"
+"HÔPITAL MONTFORT HOSPITAL": "Hôpital Montfort"
+"HÔPITAL QUEENSWAY HOSPITAL": "Queensway Carleton Hospital"
+
+# Ottawa Hospital – General Campus
+"HOSPITAL ENTRANCE- ENTRÉE D''HÔPITAL": "Ottawa General Hospital"
+"RING ROAD / HÔPITAL GENERAL HOSPITAL": "Ottawa General Hospital"
+"RING ROAD / SMYTH": "Ottawa General Hospital, Parking Lot"
+"RING ROAD": "Ottawa General Hospital Ring Rd."
+"RING ROAD / REHABILITATION/CENTRE/RÉHABILITATION": "Ottawa Hospital Rehabilitation Centre"
+"RING ROAD / MAISON RONALD MCDONALD HOUSE": "Ronald McDonald House"
+"RING ROAD / HÔPITAL D'ENFANT-CHILDRENS HOSPITAL": "Children’s Hospital of Eastern Ontario"
+
+# Hull
+"LAURIER / ÉLISABETH-BRUYÈRE": "Rue Laurier at Rue Élisabeth-Bruyère"
+"ALLUMETTIÈRES / LAURIER": "Boulevard Des Allumettières at Rue Laurier"
+"MAISONNEUVE / HÔTEL DE VILLE": "Boulevard Maisonneuve at Rue De l’Hôtel-de-Ville"
+
+# Malls
+"MAIL BEACON HILL MALL": "Beacon Hill Mall"
+"MAIL CARLINGWOOD MALL": "Carlingwood Mall"
+"MAIL HAZELDEAN MALL": "Hazeldean Mall"
+"MAIL LINCOLN HEIGHTS MALL": "Lincoln Heights Mall"
+"MAIL PINCREST MALL": "Pinecrest Mall"
+"MAIL PINECREST MALL": "Pinecrest Mall"
+"MAIL WESTGATE MALL": "Westgate Mall"
+"MAIL PLACE D'ORLÉANS MALL": "Place d’Orléans Mall"
+"ELMVALE MALL STOP / ARRÊT MAIL ELMVALE": "Elmvale Mall"
+"HAZELDEAN MALL / ARRÊT EST - EAST STOP": "Hazeldean Mall"
+"HAZELDEAN MALL / ARRÊT OUEST - WEST STOP": "Hazeldean Mall"
+"CENTRE KANATA CENTRE": "Kanata Town Centre"
+
+# Museums
+"MUSÉE DE L AGRICULTURE MUSEUM": "Agriculture Museum"
+"MUSÉE D' AVIATION MUSEUM": "Aviation Museum"
+
+# Parks
+"PARC ANDREW HAYDON PARK": "Andrew Haydon Park"
+"PARC BATHGATE PARK": "Bathgate Park"
+"PARC BAYSHORE PARK": "Bayshore Park"
+"PARC BRITANNIA PARK":                           "Britannia Park"
+"PARC BRITANNIA PARK / PARKING - STATIONNEMENT": "Britannia Park"
+"PARC BRITANNIA PARK / LOOP - BOUCLE":           "Britannia Park, Parking Lot"
+"PARC HORNET'S NEST PARK": "Hornet’s Nest Park"
+"PARC JETFORM PARK": "Jetform Park"
+"PARC JOE JAMIESON PARK": "Joe Jamieson Park"
+"PARC LANSDOWNE PARK": "Lansdowne Park"
+"PARC UTMAN PARK": "Utman Park"
+"PARC MARQUIS PARK": "Marquis Park"
+
+# Places
+"ARÉNA ARMSTRONG ARENA": "Earl Armstrong Arena"
+
+# Schools
+"ECOLE TERRY FOX SCHOOL": "Terry Fox Elementary School"
+"ÉCOLE TERRY FOX SCHOOL": "Terry Fox Elementary School"
+"THOMAS D'ARCY MCGEE SCHOOL": "Thomas D’Arcy Mcgee Elementary School"
+"É.S. NOTRE DAME": "Notre Dame High School"
+"ECOLE HILLCREST SCHOOL": "Hillcrest High School"
+"BELL H.S.": "Bell High School"
+"É.S. DE LA SALLE": "École secondaire De La Salle"
+"LAURENTIAN H.S.": "Laurentian High School"
+"L B PEARSON H.S.": "Lester B. Pearson High School"
+
+# Ramps
+"HOLLY ACRES / RAMP - BRETELLE": "Holly Acres Rd. at Highway 417 Off-ramp"
+"LEES / HIGHWAY 417 RAMP - BRETELLE": "Lees Ave. at Highway 417 On-ramp"

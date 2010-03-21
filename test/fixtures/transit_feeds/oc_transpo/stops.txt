@@ -1,0 +1,3 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon,stop_street,stop_city,stop_region,stop_postcode,stop_country,zone_id
+RF900,"GREENBORO 1A",,  45.360252, -75.658859,,,,,,
+CD920,"RIDEAU 3A",,  45.426365, -75.691154,,,,,,
