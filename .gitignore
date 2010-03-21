@@ -1,3 +1,4 @@
 db/*.sqlite3
 log/*.log
 transit_feeds/*
+test/fixtures/transit_feeds/ottawa_transit_feed/*
