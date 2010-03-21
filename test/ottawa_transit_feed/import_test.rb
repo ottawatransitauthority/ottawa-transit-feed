@@ -45,13 +45,11 @@ module OttawaTransitFeed
 
     test "imported route" do
       route = Route.last
-      assert_equal "a5dfc1ee6580b9cbc956524560cba1f7", route.route_id
-      assert_equal "1 DOWNTOWN", route.headsign
+      assert_equal "1", route.route_id
       assert_equal "1", route.short_name
-      assert_equal "DOWNTOWN", route.long_name
-      assert_equal "OTTAWA-ROCKCLIFFE", route.heading
-      assert_equal ["RF900", "CD920"], route.stop_ids
-      assert_equal 2, route.stops.size
+      assert route.long_name.blank?
+      assert route.desc.blank?
+      assert_equal 1, route.number
       assert_equal 1, route.trips.size
     end
     
@@ -65,8 +63,12 @@ module OttawaTransitFeed
       assert trip.route
       assert_equal "WEEKDAY_SCHEDULE", trip.service_id
       assert_equal "Ottawa-Rockcliffe", trip.original_headsign
-      assert_equal "a5dfc1ee6580b9cbc956524560cba1f7", trip.route.route_id
-      assert_equal "1 DOWNTOWN", trip.route.headsign
+      assert_equal "1", trip.route.route_id
+      assert_equal "1 DOWNTOWN", trip.headsign
+
+      # assert_equal "OTTAWA-ROCKCLIFFE", route.heading
+      # assert_equal ["RF900", "CD920"], trip.stop_ids
+
     end
   end
 end

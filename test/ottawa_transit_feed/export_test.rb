@@ -40,8 +40,8 @@ module OttawaTransitFeed
     
     test "exported routes" do 
       expected = [
-        ["route_id",                         "route_type", "route_short_name", "route_long_name"],
-        ["a5dfc1ee6580b9cbc956524560cba1f7", "2",          "1",                "DOWNTOWN"       ]
+        ["route_id", "route_type", "route_short_name", "route_long_name"],
+        ["1",        "2",          "1",                nil              ]
       ]
       assert_equal expected, exported(:routes)
     end
@@ -64,10 +64,10 @@ module OttawaTransitFeed
       assert_equal expected, exported(:stop_times)
     end
     
-    test "exported tripe" do 
+    test "exported trips" do 
       expected = [
-        ["service_id",       "block_id", "route_id",                         "trip_id"             ],
-        ["WEEKDAY_SCHEDULE", "123",      "a5dfc1ee6580b9cbc956524560cba1f7", "001-WEEKDAY_SCHEDULE"]
+        ["service_id",       "block_id", "route_id", "trip_id"             ],
+        ["WEEKDAY_SCHEDULE", "123",      "1",        "001-WEEKDAY_SCHEDULE"]
       ]
       assert_equal expected, exported(:trips)
     end

@@ -38,7 +38,6 @@ module OttawaTransitFeed
           route.string  :short_name
           route.string  :long_name
           route.string  :desc
-          route.string  :heading
           route.text    :stop_ids
         end
 
@@ -76,10 +75,11 @@ module OttawaTransitFeed
         add_index :stops, :stop_id, :unique => true
 
         create_table :trips do |stop|
-          stop.string :service_id
-          stop.string :route_id
           stop.string :trip_id
+          stop.string :service_id
           stop.string :block_id
+          stop.string :route_id
+          stop.string :headsign
           stop.string :original_route_id
           stop.string :original_headsign
         end
