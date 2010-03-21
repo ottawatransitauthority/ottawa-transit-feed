@@ -3,8 +3,12 @@ require "#{File.dirname(File.dirname(__FILE__))}/test_helper"
 module OttawaTransitFeed
   class TripTest < ActiveSupport::TestCase
 
-    def teardown
+    def setup
       OttawaTransitFeed.clear_database
+      
+      Stop.create! :stop_id => "CD935", :name => "RIDEAU 4A"
+      Stop.create! :stop_id => "NC950", :name => "WESTBORO 3A"
+      Stop.create! :stop_id => "WD940", :name => "BAYSHORE 3A"
     end
 
     def setup_two_bayshore_trip (trip_id = "1-SERVICE_ID")
