@@ -13,9 +13,10 @@ module OttawaTransitFeed
     alias_attribute :destination, :long_name
 
     before_validation :set_route_id
+    before_validation :set_route_type
     before_validation :set_destination
   
-    validates_presence_of :number, :heading, :stop_ids, :route_id, :destination
+    validates_presence_of :number, :heading, :stop_ids, :route_id, :route_type, :destination
     
     class << self
       
@@ -65,6 +66,10 @@ module OttawaTransitFeed
       if route_id.blank? && number.present? && heading.present? && stop_ids.present?
         self.route_id = self.class.identifier_for number, heading, stop_ids
       end
+    end
+    
+    def set_route_type
+      self.route_type = 2 # TODO, account for O-Train
     end
     
     def set_destination
