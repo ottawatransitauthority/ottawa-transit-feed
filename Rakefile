@@ -30,6 +30,14 @@ task :import => :setup do
   OttawaTransitFeed.import "transit_feeds/oc_transpo"
 end
 
+task :import_stop_times => :setup do
+  OttawaTransitFeed::StopTime.import! "transit_feeds/oc_transpo"
+end
+
+task :import_trips => :setup do
+  OttawaTransitFeed::Trip.import! "transit_feeds/oc_transpo"
+end
+
 task :export => :setup do
   OttawaTransitFeed.export "transit_feeds/ottawa_transit_feed"
 end
