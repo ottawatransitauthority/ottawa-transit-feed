@@ -14,7 +14,7 @@ task :download do
   zip  = Date.today.strftime("transit_feeds/oc_transpo_%Y%m%d.zip")
   `mkdir -p #{feed}`
   `wget #{url} --output-document=#{zip}`
-  `unzip #{zip} -d #{feed}` if Dir.glob("#{feed}/*").empty?
+  puts `unzip #{zip} -d #{feed}` if Dir.glob("#{feed}/*").empty?
 end
 
 task :import do
@@ -23,10 +23,6 @@ end
 
 task :export do
   OttawaTransitFeed.export "transit_feeds/ottawa_transit_feed"
-end
-
-task :import_stop_times do
-  OttawaTransitFeed::StopTime.import! "transit_feeds/oc_transpo"
 end
 
 task :import_trips do
@@ -40,5 +36,16 @@ namespace :db do
 
   task :reset  do
     OttawaTransitFeed.reset_database
+  end
+end
+
+task :release do
+  Dir.chdir "transit_feeds" do
+    feed    = "ottawa_transit_feed"
+    release = Date.today.strftime("ottawa_transit_feed_%Y%m%d")
+    zip     = Date.today.strftime("ottawa_transit_feed_%Y%m%d.zip")
+    `rm -rf #{release}`
+    `cp -R #{feed} #{release}`
+    puts `zip -vr #{zip} #{release}`
   end
 end
