@@ -16,13 +16,15 @@ module OttawaTransitFeed::Feeder
   end
 
   def import (feed)
-    FasterCSV.foreach "#{feed}/#{feed_file}", :headers => :first_row do |row|
-      hash = row.to_hash
-      hash.values.each { |value| value.strip! if value }
-      record = new(hash)
-      record.save!
-      puts record.inspect if OttawaTransitFeed.env == :development
+    elapsed = Benchmark.realtime do
+      FasterCSV.foreach "#{feed}/#{feed_file}", :headers => :first_row do |row|
+        hash = row.to_hash
+        hash.values.each { |value| value.strip! if value }
+        record = new(hash)
+        record.save!
+      end
     end
+    "#{self.class.name}.import completed in #{elapsed}"
   end
   
   def export (feed)
