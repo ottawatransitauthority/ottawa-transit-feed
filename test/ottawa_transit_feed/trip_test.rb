@@ -28,7 +28,7 @@ module OttawaTransitFeed
       assert_equal 2, trip.route_number
     end
 
-    test "trip derives route headings from original trip headsign" do
+    test "trip derives route heading from original trip headsign" do
       trip = Trip.new(:trip_headsign => "Bayshore")
       assert_equal "BAYSHORE", trip.route_heading
     end
