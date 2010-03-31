@@ -21,6 +21,7 @@ module OttawaTransitFeed
 
   # Export a transit feed from the database.  
   def export (feed)
+    `mkdir -p #{feed}`
     record_classes.each do |records|
       records.export feed
     end
