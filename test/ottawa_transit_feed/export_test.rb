@@ -40,8 +40,8 @@ module OttawaTransitFeed
     
     test "exported routes" do 
       expected = [
-        ["route_id", "route_type", "route_short_name", "route_long_name"],
-        ["1",        "2",          "1",                nil              ]
+        ["route_id", "route_type", "route_short_name", "route_long_name"                ],
+        ["1",        "2",          "1",                "South Keys to Ottawa-Rockcliffe"]
       ]
       assert_equal expected, exported(:routes)
     end
