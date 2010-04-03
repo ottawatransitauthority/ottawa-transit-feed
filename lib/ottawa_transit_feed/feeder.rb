@@ -2,6 +2,8 @@ require "fastercsv"
 
 module OttawaTransitFeed::Feeder
 
+  # Feeders import and export transit feed CSV files.
+
   def self.extended (base)
     prefix = base.name.demodulize.underscore
     base.columns.each do |column|
