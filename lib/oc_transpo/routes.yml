@@ -1,0 +1,505 @@
+--- 
+- :number: "1"
+  :name: South Keys to Ottawa-Rockcliffe
+- :number: "2"
+  :name: Downtown to Bayshore
+- :number: "3"
+  :name: Downtown to Colonnade
+- :number: "4"
+  :name: Downtown to Hurdman
+- :number: "5"
+  :name: Billings Bridge to St. Laurent
+- :number: "6"
+  :name: "Downtown to Tunney\xE2\x80\x99s Pasture"
+- :number: "7"
+  :name: Carleton to St. Laurent
+- :number: "8"
+  :name: Billings Bridge to Gatineau
+- :number: "9"
+  :name: Downtown to Hurdman
+- :number: "12"
+  :name: Downtown to Blair
+- :number: "14"
+  :name: Carlington to St. Laurent
+- :number: "15"
+  :name: Downtown to Blair
+- :number: "16"
+  :name: Alta Vista to Britannia
+- :number: "18"
+  :name: Bayview to St. Laurent
+- :number: "20"
+  :name: "Downtown to Orl\xC3\xA9ans"
+- :number: "21"
+  :name: "Downtown to Orl\xC3\xA9ans"
+- :number: "22"
+  :name: "Downtown to Orl\xC3\xA9ans"
+- :number: "23"
+  :name: Downtown to Chapel Hill
+- :number: "24"
+  :name: Downtown to Beacon Hill
+- :number: "27"
+  :name: "Gatineau to Orl\xC3\xA9ans"
+- :number: "31"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "32"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "33"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "34"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "35"
+  :name: "Downtown to Orl\xC3\xA9ans"
+- :number: "37"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "38"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "39"
+  :name: "Downtown to Jeanne d\xE2\x80\x99Arc"
+- :number: "40"
+  :name: Gatineau Hull to Gloucester South
+- :number: "43"
+  :name: Downtown to Ottawa South
+- :number: "57"
+  :name: Downtown to Baseline
+- :number: "60"
+  :name: Downtown to Kanata
+- :number: "61"
+  :name: Downtown to Kanata
+- :number: "62"
+  :name: Downtown to Kanata
+- :number: "63"
+  :name: Downtown to Kanata
+- :number: "64"
+  :name: Downtown to Kanata
+- :number: "65"
+  :name: Downtown to Kanata
+- :number: "66"
+  :name: Downtown to Kanata
+- :number: "67"
+  :name: Downtown to Nepean Centre
+- :number: "68"
+  :name: Downtown to Kanata
+- :number: "69"
+  :name: Downtown to Nepean Centre
+- :number: "70"
+  :name: Downtown to Nepean South
+- :number: "71"
+  :name: Downtown to Nepean South
+- :number: "73"
+  :name: Downtown to Nepean South
+- :number: "76"
+  :name: Downtown to Nepean South
+- :number: "77"
+  :name: Downtown to Nepean South
+- :number: "82"
+  :name: "Tunney\xE2\x80\x99s Pasture to Alta Vista"
+- :number: "85"
+  :name: Hurdman to Bayshore
+- :number: "86"
+  :name: Elmvale to Lincoln Fields
+- :number: "87"
+  :name: South Keys to Carlingwood
+- :number: "88"
+  :name: Gatineau Hull to South Keys
+- :number: "94"
+  :name: "Tunney\xE2\x80\x99s Pasture to Millennium"
+- :number: "95"
+  :name: "Orl\xC3\xA9ans & Trim to Baseline, Fallowfield & Barrhaven Centre"
+- :number: "96"
+  :name: Hurdman to Terry Fox & Stittsville
+- :number: "97"
+  :name: "South Keys & Airport to Tunney\xE2\x80\x99s Pasture & Bayshore"
+- :number: "98"
+  :name: "Hawthorne to Greenboro & Tunney\xE2\x80\x99s Pasture"
+- :number: "99"
+  :name: Greenboro & Downtown to Riverview
+- :number: "101"
+  :name: "Orl\xC3\xA9ans to Tunney\xE2\x80\x99s Pasture, Bayshore & Kanata North"
+- :number: "102"
+  :name: "Blair and Orl\xC3\xA9ans to Tunney\xE2\x80\x99s Pasture"
+- :number: "103"
+  :name: Overbrook to Hurdman
+- :number: "105"
+  :name: "Gatineau to Tunney\xE2\x80\x99s Pasture"
+- :number: "106"
+  :name: Elmvale to Hurdman
+- :number: "111"
+  :name: Hurdman to Lincoln Fields
+- :number: "112"
+  :name: Elmvale to Billings Bridge
+- :number: "114"
+  :name: Hurdman to Greenboro
+- :number: "115"
+  :name: Heron Park to Billings Bridge
+- :number: "116"
+  :name: South Keys to Baseline
+- :number: "117"
+  :name: Carleton to Baseline
+- :number: "118"
+  :name: Hurdman to Kanata
+- :number: "120"
+  :name: "Portobello to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "121"
+  :name: St. Laurent to Hurdman
+- :number: "122"
+  :name: "Millennium to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "123"
+  :name: Gloucester North to Blair
+- :number: "124"
+  :name: Beacon Hill to Hurdman
+- :number: "125"
+  :name: "Hurdman to Orl\xC3\xA9ans"
+- :number: "126"
+  :name: Pineview to Hurdman
+- :number: "127"
+  :name: "Place d\xE2\x80\x99Orl\xC3\xA9ans to St. Laurent"
+- :number: "128"
+  :name: Blackburn Hamlet to Hurdman
+- :number: "129"
+  :name: Aviation to Hurdman
+- :number: "130"
+  :name: Convent Glen to Fallingbrook
+- :number: "131"
+  :name: Convent Glen to Chapel Hill
+- :number: "133"
+  :name: Blair to Chapel Hill
+- :number: "135"
+  :name: "Esprit to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "136"
+  :name: "Tenth Line to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "137"
+  :name: Queenswood Heights Local
+- :number: "140"
+  :name: South Keys to Hurdman
+- :number: "141"
+  :name: Billings Bridge to Alta Vista
+- :number: "142"
+  :name: Gloucester South to South Keys
+- :number: "143"
+  :name: Local East to South Keys
+- :number: "144"
+  :name: Gloucester South to South Keys
+- :number: "145"
+  :name: Riverview Local
+- :number: "146"
+  :name: South Keys to Hurdman
+- :number: "147"
+  :name: Gloucester South to South Keys
+- :number: "148"
+  :name: Elmvale to Hurdman
+- :number: "149"
+  :name: Elmvale to Hurdman
+- :number: "150"
+  :name: LeBreton to Iris
+- :number: "151"
+  :name: "Tunney\xE2\x80\x99s Pasture to Carlingwood"
+- :number: "152"
+  :name: Lincoln Fields to Bayshore
+- :number: "153"
+  :name: Somerset to LeBreton
+- :number: "154"
+  :name: Lincoln Fields to Bayshore
+- :number: "155"
+  :name: LeBreton to Baseline
+- :number: "156"
+  :name: Carlingwood & Nepean South to Merivale & Lincoln Fields
+- :number: "157"
+  :name: Baseline to Nepean Centre
+- :number: "158"
+  :name: Colonnade & Nepean Centre to Hurdman
+- :number: "159"
+  :name: Westboro to Carlingwood
+- :number: "160"
+  :name: "Morgan\xE2\x80\x99s Grant to Terry Fox"
+- :number: "161"
+  :name: Bridlewood to Terry Fox
+- :number: "162"
+  :name: Kanata & Eagleson to Brookside & Local North
+- :number: "163"
+  :name: Kanata to Local West
+- :number: "164"
+  :name: Bridlewood to Terry Fox
+- :number: "165"
+  :name: Terry Fox to Beaverbrook
+- :number: "166"
+  :name: Nepean North & Bayshore to Nepean Centre & Bayshore
+- :number: "167"
+  :name: Lincoln Fields to Kanata
+- :number: "168"
+  :name: Kanata North to Terry Fox
+- :number: "169"
+  :name: Bayshore to Kanata
+- :number: "170"
+  :name: Longfields to Walter Baker
+- :number: "171"
+  :name: Fallowfield to Stonebridge
+- :number: "172"
+  :name: Lincoln Fields to Bayshore
+- :number: "173"
+  :name: Barrhaven Centre to Fallowfield
+- :number: "174"
+  :name: Carlingwood to Nepean Centre
+- :number: "176"
+  :name: "Nepean South to Tunney\xE2\x80\x99s Pasture"
+- :number: "177"
+  :name: Barrhaven North to Stonebridge South
+- :number: "178"
+  :name: Lincoln Fields to Nepean Centre
+- :number: "179"
+  :name: Lincoln Fields to Nepean Centre
+- :number: "181"
+  :name: Bayshore to Nepean South
+- :number: "182"
+  :name: Kanata to Downtown
+- :number: "183"
+  :name: Local West to Kanata
+- :number: "184"
+  :name: Terry Fox to Hope Side
+- :number: "186"
+  :name: Manotick to Fallowfield
+- :number: "187"
+  :name: Iris to Westboro
+- :number: "188"
+  :name: Nepean South to Lincoln Fields
+- :number: "189"
+  :name: Riverview to Greenboro
+- :number: "190"
+  :name: Ottawa Rockcliffe to Hurdman
+- :number: "191"
+  :name: Ottawa South to Hurdman
+- :number: "192"
+  :name: Elmvale to Hurdman
+- :number: "193"
+  :name: "Orl\xC3\xA9ans Local"
+- :number: "194"
+  :name: Gloucester North to Blair
+- :number: "195"
+  :name: Nepean South & Barrhaven to Gatineau Hull
+- :number: "197"
+  :name: South Keys to Gloucester South
+- :number: "199"
+  :name: "Barrhaven to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "221"
+  :name: Downtown to Cumberland
+- :number: "231"
+  :name: Downtown to Cumberland
+- :number: "232"
+  :name: Downtown to Cumberland
+- :number: "245"
+  :name: Riverview to Manotick
+- :number: "261"
+  :name: Downtown to Stittsville
+- :number: "262"
+  :name: Downtown to Stittsville
+- :number: "263"
+  :name: Downtown to Stittsville
+- :number: "283"
+  :name: Downtown to Richmond & Munster Hamlet
+- :number: "306"
+  :name: "Island Lodge to Elisabeth Bruy\xC3\xA8re"
+- :number: "316"
+  :name: Rideau Centre to Sandy Hill
+- :number: "601"
+  :name: "\xC3\x89. S. Louis Riel to Hurdman"
+- :number: "602"
+  :name: "Maple Ridge Elementary School to Orl\xC3\xA9ans"
+- :number: "603"
+  :name: "\xC3\x89. S. De LaSalle to Tunney\xE2\x80\x99s Pasture"
+- :number: "604"
+  :name: "\xC3\x89. S. De LaSalle to Billings Bridge"
+- :number: "605"
+  :name: "\xC3\x89. S. De LaSalle to Greenboro"
+- :number: "606"
+  :name: "Cairine Wilson S.S. to Orl\xC3\xA9ans"
+- :number: "607"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Orl\xC3\xA9ans"
+- :number: "608"
+  :name: "\xC3\x89. S. De LaSalle to Orl\xC3\xA9ans"
+- :number: "609"
+  :name: Fielding P.S. to Riverside, Uplands
+- :number: "610"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Chapel Hill"
+- :number: "611"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Chapel Hill"
+- :number: "612"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Chapel Hill"
+- :number: "613"
+  :name: Immaculata H. S to Downtown
+- :number: "614"
+  :name: Lester B Pearson H.S. to Chapel Hill
+- :number: "615"
+  :name: Lester B Pearson H.S. to Pineview
+- :number: "617"
+  :name: Lester B Pearson H.S. to Blackburn
+- :number: "618"
+  :name: "\xC3\x89. S. Louis Riel to Orl\xC3\xA9ans"
+- :number: "619"
+  :name: "\xC3\x89. S. Louis Riel to Blair"
+- :number: "620"
+  :name: St. Peter H.S. to Avalon
+- :number: "621"
+  :name: Colonel By S.S. to Chapel Hill
+- :number: "622"
+  :name: Colonel By S.S. to Blackburn/Page
+- :number: "623"
+  :name: Colonel By S.S. to Beausejour
+- :number: "624"
+  :name: Gloucester H.S. to Orleans/Innes
+- :number: "625"
+  :name: Colonel By S.S. to Queenswood Heights
+- :number: "626"
+  :name: Colonel By S.S. to Queenswood Heights
+- :number: "627"
+  :name: Gloucester H.S. & Colonel By H.S. to Convent Glen North
+- :number: "628"
+  :name: Gloucester H.S. to Chapel Hill
+- :number: "629"
+  :name: Gloucester H.S. to Blackburn
+- :number: "630"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Chapel Hill"
+- :number: "631"
+  :name: "\xC3\x89. S. Garneau to Convent Garden"
+- :number: "632"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Queenswood"
+- :number: "633"
+  :name: Lester B Pearson H.S. to St. Laurent
+- :number: "634"
+  :name: "\xC3\x89. S. Garneau to Convent Glen North"
+- :number: "635"
+  :name: Gloucester H.S. to Queenswood Heights
+- :number: "636"
+  :name: "\xC3\x89. S. B\xC3\xA9atrice-Desloges to Fallingbrook"
+- :number: "637"
+  :name: St. Peter H.S. to Queenswood Heights
+- :number: "638"
+  :name: "\xC3\x89. S. Garneau to Queenswood"
+- :number: "639"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to South Keys"
+- :number: "640"
+  :name: Brookfield H.S. to Hunt Club
+- :number: "641"
+  :name: "\xC3\x89. S. Louis Riel to Orleans"
+- :number: "642"
+  :name: Merivale H.S. to Blossom Park
+- :number: "643"
+  :name: "\xC3\x89. S. Gis\xC3\xA8le Lalonde to Aquaview"
+- :number: "644"
+  :name: Gloucester H.S. to Meadowglen
+- :number: "645"
+  :name: Gloucester H.S. to Queensview Heights
+- :number: "646"
+  :name: Ridgemont H.S. to Gloucester South
+- :number: "647"
+  :name: "\xC3\x89. S. Deslauriers to Greenboro"
+- :number: "648"
+  :name: "\xC3\x89. S. Louis Riel to Chapel Hill"
+- :number: "649"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to Walkley"
+- :number: "650"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to Riverside"
+- :number: "651"
+  :name: Canterbury H.S. to South Keys
+- :number: "652"
+  :name: Hillcrest H.S. to South Keys
+- :number: "653"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to Elmvale"
+- :number: "654"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to Lorry Greenberg"
+- :number: "655"
+  :name: "St. Patrick\xE2\x80\x99s H.S. to South Keys"
+- :number: "656"
+  :name: "\xC3\x89. S. Deslauriers to Hurdman"
+- :number: "657"
+  :name: St. Pius X  H.S. to Viewmont
+- :number: "658"
+  :name: Earl of March S.S. to Glen Cairn
+- :number: "659"
+  :name: Earl of March S.S. to Bridlewood
+- :number: "660"
+  :name: Bell H.S. to Kanata North
+- :number: "661"
+  :name: Bell H.S. to Kanata Lakes
+- :number: "662"
+  :name: A.Y. Jackson to Bridlewood
+- :number: "663"
+  :name: A.Y. Jackson to Bridlewood
+- :number: "664"
+  :name: "\xC3\x89. S. Deslauriers to Lincoln Fields"
+- :number: "665"
+  :name: Bell H.S. to Bridlewood
+- :number: "667"
+  :name: Bell H.S. to Nepean North
+- :number: "668"
+  :name: Bell H.S. to Baseline
+- :number: "669"
+  :name: Bell H.S. to Bayshore
+- :number: "670"
+  :name: St. Pius X H.S. to Nepean Centre
+- :number: "671"
+  :name: Cairine Wilson S.S. to Orleans
+- :number: "672"
+  :name: Ridgemont H.S. to Ottawa South
+- :number: "673"
+  :name: Earl of March S.S. to Terry Fox
+- :number: "674"
+  :name: All Saints H.S.Stephen Leacock to Morgans Grant
+- :number: "675"
+  :name: Merivale H.S. to Barrhaven
+- :number: "676"
+  :name: "St. Peter\xE2\x80\x99s H.S. to Place d\xE2\x80\x99Orl\xC3\xA9ans"
+- :number: "677"
+  :name: Merivale H.S. to Longfields
+- :number: "678"
+  :name: "\xC3\x89. S. Louis Riel to Orleans"
+- :number: "679"
+  :name: Cedarview M.S. to Barrhaven
+- :number: "680"
+  :name: Bell H.S. to Katimavik
+- :number: "681"
+  :name: Bell H.S. to Glen Cairn/Westcliffe
+- :number: "682"
+  :name: Longfields-Davidson Heights S.S. to Barrhaven
+- :number: "683"
+  :name: Notre Dame H.S. to Bayshore
+- :number: "684"
+  :name: Notre Dame H.S. to Carlington
+- :number: "685"
+  :name: Longfields-Davidson Heights S.S. to Barrhaven
+- :number: "687"
+  :name: Merivale H.S. to Nepean South
+- :number: "688"
+  :name: Merivale H.S. to Baseline
+- :number: "690"
+  :name: St. Pius X H.S. to Baseline
+- :number: "691"
+  :name: "\xC3\x89. S. Deslauriers to Bayshore"
+- :number: "692"
+  :name: Hillcrest H.S. to South Keys
+- :number: "693"
+  :name: "\xC3\x89. S. De LaSalle to Lincoln Fields"
+- :number: "694"
+  :name: "\xC3\x89. S. De LaSalle to Blair"
+- :number: "695"
+  :name: "\xC3\x89. S. B\xC3\xA9atrice-Desloges to Place d\xE2\x80\x99Orleans"
+- :number: "696"
+  :name: Cedarview M.S. to Barrhaven
+- :number: "699"
+  :name: "\xC3\x89. S. Deslauriers to Fallowfield Station"
+- :number: "740"
+  :name: O-Bus Bayview to O-Bus Greenboro
+- :number: "824"
+  :name: Beacon Hill to St. Laurent
+- :number: "825"
+  :name: "Orl\xC3\xA9ans to Hurdman"
+- :number: "829"
+  :name: Vanier / Overbrook / St. Laurent
+- :number: "830"
+  :name: "Orl\xC3\xA9ans Local"
+- :number: "835"
+  :name: "Orl\xC3\xA9ans Local"
+- :number: "837"
+  :name: "Orl\xC3\xA9ans Local"
+- :number: "873"
+  :name: Nepean South to Nepean Centre
+- :number: "891"
+  :name: St. Laurent to Pinecrest

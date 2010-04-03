@@ -4,6 +4,7 @@ gem "hpricot"
 
 module OCTranspo
   autoload :Lingo,       "oc_transpo/lingo"
+  autoload :Route,       "oc_transpo/route"
   autoload :ServiceDate, "oc_transpo/service_date"
   autoload :Stop,        "oc_transpo/stop"
   autoload :Headsign,    "oc_transpo/headsign"
