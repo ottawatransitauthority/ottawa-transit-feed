@@ -18,9 +18,7 @@ module OttawaTransitFeed
 
         create_table :calendars do |calendar|
           calendar.string :service_id
-          %w(monday tuesday wednesday thursday friday saturday sunday).each do |day_of_the_week|
-            calendar.boolean day_of_the_week
-          end
+          %w(monday tuesday wednesday thursday friday saturday sunday).each { |day| calendar.string day }
           calendar.string :start_date
           calendar.string :end_date
         end
@@ -32,13 +30,12 @@ module OttawaTransitFeed
         end
 
         create_table :routes do |route|
-          route.string  :agency_id
-          route.string  :route_id
-          route.integer :route_type
-          route.string  :short_name
-          route.string  :long_name
-          route.string  :desc
-          route.text    :stop_ids
+          route.string :agency_id
+          route.string :route_id
+          route.string :route_type
+          route.string :short_name
+          route.string :long_name
+          route.string :desc
         end
 
         add_index :routes, :route_id, :unique => true
@@ -79,12 +76,21 @@ module OttawaTransitFeed
           stop.string :service_id
           stop.string :block_id
           stop.string :route_id
-          stop.string :headsign
+          stop.string :headsign_signature
           stop.string :original_route_id
           stop.string :original_headsign
         end
         
         add_index :trips, :trip_id, :unique => true
+
+        create_table :headsigns do |headsign|
+          headsign.string :string
+          headsign.string :signature
+          headsign.string :route_id
+          headsign.text :stop_ids
+        end
+
+        add_index :headsigns, :signature, :unique => true
       end
     end
   end
