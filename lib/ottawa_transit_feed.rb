@@ -6,6 +6,8 @@ gem "fastercsv"
 require "active_support"
 require "active_record"
 
+ActiveSupport::Dependencies.load_paths << File.dirname(__FILE__)
+
 module OttawaTransitFeed
   extend self
   
@@ -17,6 +19,7 @@ module OttawaTransitFeed
       report = records.import(feed)
       puts report if report && env == :development
     end
+    Headsign.import
   end
 
   # Export a transit feed from the database.  
@@ -25,6 +28,7 @@ module OttawaTransitFeed
     feeders.each do |records|
       records.export feed
     end
+    # Headsign.export "headsigns.yml"
   end
 
   attr_writer :env
@@ -55,31 +59,17 @@ module OttawaTransitFeed
   protected
   
   def feeders
-    load_modules
     [Agency, Calendar, CalendarDate, Route, Stop, StopTime, Trip]
   end
 
   def record_classes
-    load_modules
-    Record.subclasses
-  end
-  
-  def append_features (base)
-    load_modules
-    super
+    [Agency, Calendar, CalendarDate, Headsign, Route, Stop, StopTime, Trip]
   end
 
-  def load_modules
-    module_file_names.each do |file_name|
-      "#{self.name}::#{file_name.camelize}".constantize
+  def self.included (base)
+    submodule_file_names = Dir.glob(__FILE__.sub(".rb", "/*")).map { |path| File.basename(path, ".rb") }
+    submodule_file_names.each do |file_name|
+      "OttawaTransitFeed::#{file_name.camelize}".constantize
     end
-  end
-
-  def module_file_names
-    Dir.glob(__FILE__.sub(".rb", "/*")).map { |path| File.basename(path, ".rb") }
-  end
-
-  module_file_names.each do |file_name|
-    autoload file_name.camelize, "#{self.name.underscore}/#{file_name}"
   end
 end
