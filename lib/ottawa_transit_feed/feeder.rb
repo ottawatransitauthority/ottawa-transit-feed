@@ -31,7 +31,7 @@ module OttawaTransitFeed::Feeder
     options = { :headers => feed_attributes, :write_headers => true }
     FasterCSV.open "#{feed}/#{feed_file}", "w", options do |csv|
       find_each do |model|
-        csv << feed_attributes.map {|attribute| format_feed_value model.send(attribute) }
+        csv << feed_attributes.map {|attribute| model.send(attribute) }
       end
     end
   end
@@ -44,18 +44,5 @@ module OttawaTransitFeed::Feeder
   
   def feed_file
     "#{table_name}.txt"
-  end
-
-  protected
-
-  def format_feed_value (value)
-    case value
-    when true
-      "1"
-    when false
-      "0"
-    else
-      value
-    end
   end
 end
