@@ -10,19 +10,21 @@ module OCTranspo
     end
   
     def route_1 (heading, stops)
-      if stops.last[:stop_id] == "DT007" # Somerset St. at O’Connor St.
+      case
+      when stops.last[:stop_id] == 'RF375' # Bank St. at Cahill Dr.
+        "1 OTTAWA-ROCKCLIFFE"
+      when stops.last[:code] == "8789" # Maple Grove Rd. at Springfield Rd.
+        "1 OTTAWA ROCKCLIFFE"
+      when stops.last[:stop_id] == "DT007" # Somerset St. at O’Connor St.
         "1 DOWNTOWN"
-      else
-        case stops.last[:code]
-        when "8789" # Maple Grove Rd. at Springfield Rd.
-          "1 OTTAWA ROCKCLIFFE"
-        when "3009" # Rideau Centre
-          "1 DOWNTOWN"
-        when "3037" # Greenboro Station
-          "1 SOUTH KEYS"
-        when "3034" # Billings Bridge Station
-          "1X BILLINGS BRIDGE"
-        end
+      when stops.last[:code] == "3009" # Rideau Centre
+        "1 DOWNTOWN"
+      when stops.last[:stop_id] == 'CC180' # Old St. Patrick St. at Cobourg St.
+        "1 SOUTH KEYS"
+      when stops.last[:code] == "3037" # Greenboro Station
+        "1 SOUTH KEYS"
+      when stops.last[:code] == "3034" # Billings Bridge Station
+        "1X BILLINGS BRIDGE"
       end
     end
 
@@ -82,16 +84,20 @@ module OCTranspo
     end
 
     def route_7 (heading, stops)
-      case stops.last[:code]
-      when "5813" # Campus Ave. & Library Rd.
+      case
+      when stops.last[:stop_id] == 'EB100' # St. Laurent Blvd. at Queen E School
         "7 CARLETON"
-      when "3009" # Rideau Centre
+      when stops.last[:code] == "5813" # Campus Ave. & Library Rd.
+        "7 CARLETON"
+      when stops.last[:code] == "3009" # Rideau Centre
         "7X DOWNTOWN"
-      when "2488" # Bank St. & Somerset St.
+      when stops.last[:code] == "2488" # Bank St. & Somerset St.
         "7X DOWNTOWN"
-      when "3025" # St. Laurent Station
+      when stops.last[:stop_id] == "CG360" # Grove Ave. at Grosvenor Ave.
         "7 ST. LAURENT"
-      when "1895" # Montreal Rd. & Brittany Dr.
+      when stops.last[:code] == "3025" # St. Laurent Station
+        "7 ST. LAURENT"
+      when stops.last[:code] == "1895" # Montreal Rd. & Brittany Dr.
         "7X OTTAWA ROCKCLIFFE"
       end
     end
@@ -788,14 +794,17 @@ module OCTranspo
       end
     end
   
-    # TODO: Incomplete due to incomplete dataset
     def route_105 (heading, stops)
-      case stops.last[:code]
-      when "5718" # Promenade Ave. & Terrasses de la Chaudière
-        "105 HULL"
-      when "3011" # Tunney’s Pasture Station
-        "105 TUNNEY’S PASTURE"
+      case stops.last[:stop_id]
+      when 'CK125' # Maisonneuve St. at AllumettiÈRes
+        "105 GATINEAU"
       end
+      # case stops.last[:code]
+      # when "5718" # Promenade Ave. & Terrasses de la Chaudière
+      #   "105 HULL"
+      # when "3011" # Tunney’s Pasture Station
+      #   "105 TUNNEY’S PASTURE"
+      # end
     end
   
     def route_106 (heading, stops)
@@ -810,11 +819,15 @@ module OCTranspo
     end
 
     def route_111 (heading, stops)
-      case stops.last[:code]
-      when "3023" # Hurdman Station
-        "111 HURDMAN"
-      when "3014" # Lincoln Fields Station
-        "111 LINCOLN FIELDS"
+      case
+      # when stops.last[:code] == "3023" # Hurdman Station
+      #   "111 HURDMAN"
+      when stops.last[:stop_id] == 'SH370' # Meadowlands Dr. at Brooklane
+        "111 HURDMAN" 
+      when stops.last[:stop_id] == 'RA415' # Heron Rd. at Confederation Station
+        "111 LINCOLN FIELDS"   
+      # when stops.last[:code] == "3014" # Lincoln Fields Station
+      #   "111 LINCOLN FIELDS"
       end
     end
 
@@ -865,10 +878,8 @@ module OCTranspo
     end
 
     def route_117 (heading, stops)
-      case stops.last[:code]
-      when "3017" # Baseline Station
-        "117 BASELINE"
-      when "5813" # Campus Ave. & Library Rd.
+      case stops.last[:stop_id]
+      when 'SH430' # Meadowlands Dr. at Laird
         "117 CARLETON"
       end
     end
@@ -955,15 +966,14 @@ module OCTranspo
     end
 
     def route_128 (heading, stops)
-      last_stop = stops.last
       case 
-      when last_stop.number == "3023" # Hurdman Station
+      when stops.last[:code] == "3023" # Hurdman Station
         "128 HURDMAN"
-      when last_stop.number == "3027" # Blair Station
+      when stops.last[:code] == "3027" # Blair Station
         "128 BLAIR"
-      when last_stop.official_id == "EH493" # Blackburn Arena
+      when stops.last[:stop_id] == "EH493" # Blackburn Arena
         "128 BLACKBURN ARENA"
-      when last_stop.number == "8678" # Tauvette St. & Innes Rd
+      when stops.last[:code] == "8678" # Tauvette St. & Innes Rd
         "128 BLACKBURN HAMLET"
       end
     end
@@ -1476,16 +1486,23 @@ module OCTranspo
     end
 
     def route_186 (heading, stops)
-      case stops.last[:code]
-      when "3043" # Fallowfield Station
-        "186 FALLOWFIELD"
-      when "8048" # Carlingwood Mall
-        "186X CARLINGWOOD"
-      when "1497" # Beaverwood Rd. & Ann St.
-        "186 MANOTICK"
-      when "3747" # Fourth Line & Andrew
-        "186X NORTH GOWER"
+      case stops.last[:stop_id]
+      when "SZ245" # 6666 Rideau Valley Dr.
+        "186 CARLINGWOOD"
+      when 'SI175' # Woodroffe Ave. at Adirondack Dr.
+        "186 NORTH GOWER"
       end
+      
+      # case stops.last[:code]
+      # when "3043" # Fallowfield Station
+      #   "186 FALLOWFIELD"
+      # when "8048" # Carlingwood Mall
+      #   "186X CARLINGWOOD"
+      # when "1497" # Beaverwood Rd. & Ann St.
+      #   "186 MANOTICK"
+      # when "3747" # Fourth Line & Andrew
+      #   "186X NORTH GOWER"
+      # end
     end
 
     def route_187 (heading, stops)
