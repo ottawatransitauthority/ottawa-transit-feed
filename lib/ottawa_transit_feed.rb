@@ -13,7 +13,7 @@ module OttawaTransitFeed
   
   # Import a transit feed into the database.
   def import (feed)
-    record_classes.each do |records|
+    feeders.each do |records|
       report = records.import(feed)
       puts report if report && env == :development
     end
@@ -22,7 +22,7 @@ module OttawaTransitFeed
   # Export a transit feed from the database.  
   def export (feed)
     `mkdir -p #{feed}`
-    record_classes.each do |records|
+    feeders.each do |records|
       records.export feed
     end
   end
@@ -54,6 +54,11 @@ module OttawaTransitFeed
 
   protected
   
+  def feeders
+    load_modules
+    [Agency, Calendar, CalendarDate, Route, Stop, StopTime, Trip]
+  end
+
   def record_classes
     load_modules
     Record.subclasses
