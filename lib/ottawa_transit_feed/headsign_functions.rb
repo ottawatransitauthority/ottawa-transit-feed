@@ -26,6 +26,13 @@ module OttawaTransitFeed
       end
     end
     
+    def export
+      data = all.map do |headsign|
+        headsign.attributes.except(:id)
+      end
+      File.open("lib/oc_transpo/headsigns.yml", 'w') { |f| f << YAML.dump(data) }
+    end
+    
     def import_missing_strings
       for headsign in all_missing_strings
         puts headsign.inspect
