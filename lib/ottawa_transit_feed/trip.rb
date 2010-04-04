@@ -63,6 +63,7 @@ module OttawaTransitFeed
           end
         end
       end
+      return nil
     end
 
     def find_remote_departure_at (departure_time, location_index)
