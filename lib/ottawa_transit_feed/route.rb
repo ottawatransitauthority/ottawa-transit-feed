@@ -2,6 +2,7 @@ module OttawaTransitFeed
   class Route < Record
     extend Feeder
     extend RouteFunctions
+    extend RouteMaintenance
 
     feed_attributes :route_id, :route_type, :route_short_name, :route_long_name
 
