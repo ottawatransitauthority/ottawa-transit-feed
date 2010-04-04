@@ -19,7 +19,6 @@ module OttawaTransitFeed
       report = records.import(feed)
       puts report if report && env == :development
     end
-    Headsign.import
   end
 
   # Export a transit feed from the database.  
@@ -28,7 +27,6 @@ module OttawaTransitFeed
     feeders.each do |records|
       records.export feed
     end
-    # Headsign.export "headsigns.yml"
   end
 
   attr_writer :env
