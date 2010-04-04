@@ -16,7 +16,7 @@ module OttawaTransitFeed
     #   trip.stops    => Ordered list of stop locations in the trip.
     #
 
-    feed_attributes :service_id, :block_id, :route_id, :trip_id
+    feed_attributes :service_id, :block_id, :route_id, :trip_id, :trip_headsign
 
     validates_presence_of :service_id, :trip_id, :route
     
