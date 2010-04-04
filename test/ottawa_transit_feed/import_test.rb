@@ -82,11 +82,7 @@ module OttawaTransitFeed
       assert_equal "WEEKDAY_SCHEDULE", trip.service_id
       assert_equal "Ottawa-Rockcliffe", trip.original_headsign
       assert_equal "1", trip.route.route_id
-      assert_equal "1 DOWNTOWN", trip.headsign.to_s
-    
-      # assert_equal "OTTAWA-ROCKCLIFFE", route.heading
-      # assert_equal ["RF900", "CD920"], trip.stop_ids
-    
+      assert_equal "0bdf0c0022d2d69511a7e0dff179e1a6", trip.headsign.signature
     end
   end
 end
