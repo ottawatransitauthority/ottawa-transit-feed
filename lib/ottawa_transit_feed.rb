@@ -20,6 +20,10 @@ module OttawaTransitFeed
       puts report if report && env == :development
     end
   end
+  
+  def update
+    Headsign.import
+  end
 
   # Export a transit feed from the database.  
   def export (feed)

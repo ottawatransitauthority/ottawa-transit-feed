@@ -26,6 +26,10 @@ task :download => :setup do
   puts `unzip #{zip} -d #{feed}` if Dir.glob("#{feed}/*").empty?
 end
 
+task :update => :setup do
+  OttawaTransitFeed.update
+end
+
 task :import => :setup do
   OttawaTransitFeed.import "transit_feeds/oc_transpo"
 end

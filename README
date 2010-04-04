@@ -15,10 +15,13 @@ How do I do it?
   Step 2.
   `rake download` to get the latest OC Transpo data feed. It will be saved in the transit_feeds folder.
   
-  Step 2. 
+  Step 3. 
   `rake import` to import the official data. This will take a LONG time.
   
-  Step 3. 
+  Step 4. 
+  `rake update` to update the database with various corrections.
+
+  Step 5. 
   `rake export` to export the authoritative dataset. The exported feed will be saved in the transit_feeds folder.
   
 
