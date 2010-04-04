@@ -20,13 +20,15 @@ module OttawaTransitFeed
 
     validates_presence_of :service_id, :trip_id, :route
     
-    belongs_to :calendar, :foreign_key => "service_id"
+    belongs_to :calendar, :foreign_key => "service_id",         :primary_key => "service_id"
     belongs_to :route,    :foreign_key => "route_id",           :primary_key => "route_id"
     belongs_to :headsign, :foreign_key => "headsign_signature", :primary_key => "signature"
     
     has_many :stop_times, :primary_key => "trip_id", :order => "stop_sequence"
 
     alias :moments :stop_times
+    
+    after_save :set_headsign
     
     named_scope :all_missing_headsigns, :conditions => {:headsign_signature => nil}
     
@@ -38,17 +40,44 @@ module OttawaTransitFeed
     def trip_headsign= (trip_headsign)
       self.original_headsign = trip_headsign
     end
-
-    def stops
-      Stop.find stop_ids
-    end
     
+    def set_headsign
+      if headsign_signature.blank? && route_id.present? && stop_ids.any?
+        update_attribute :headsign_signature, Headsign.find_or_create!(route, stop_ids).signature
+      end
+    end
+
     def stop_ids
-      moments.map &:stop_id
+      moments.map(&:stop_id)
     end
     
     def route_heading
       original_headsign.upcase
+    end
+    
+    def find_remote_departure
+      moments.each do |moment|
+        if location_index = find_remote_location_index_of(moment.stop)
+          if departure = find_remote_departure_at(moment.departure_time, location_index)
+            return departure
+          end
+        end
+      end
+    end
+
+    def find_remote_departure_at (departure_time, location_index)
+      if schedule = OCTranspo::MobileRouteSchedule.find(:date => Date.parse(calendar.start_date), :route => route.number, :direction => route_heading, :location_index => location_index)
+        schedule[:departures].detect do |departure|
+          departure[:time].strftime('%H:%M:%S') == departure_time
+        end
+      end
+    end
+  
+    def find_remote_location_index_of (stop)
+      route_data     = OCTranspo::MobileRouteData.find(route.number, :date => Date.parse(calendar.start_date))
+      direction_data = route_data.detect { |direction_data| direction_data[:direction] == route_heading }
+      stop_data = direction_data[:stops].detect { |stop_data| stop_data[:number] == stop.code }
+      direction_data[:stops].index(stop_data)
     end
   end
 end
