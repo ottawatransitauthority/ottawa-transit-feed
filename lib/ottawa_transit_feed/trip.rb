@@ -46,6 +46,10 @@ module OttawaTransitFeed
         update_attribute :headsign_signature, Headsign.find_or_create!(route, stop_ids).signature
       end
     end
+    
+    def trip_headsign
+      headsign.string
+    end
 
     def stop_ids
       moments.map(&:stop_id)

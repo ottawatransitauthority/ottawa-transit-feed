@@ -66,8 +66,8 @@ module OttawaTransitFeed
     
     test "exported trips" do 
       expected = [
-        ["service_id",       "block_id", "route_id", "trip_id"             ],
-        ["WEEKDAY_SCHEDULE", "123",      "1",        "001-WEEKDAY_SCHEDULE"]
+        ["service_id",       "block_id", "route_id", "trip_id"             , "trip_headsign"],
+        ["WEEKDAY_SCHEDULE", "123",      "1",        "001-WEEKDAY_SCHEDULE", nil            ]
       ]
       assert_equal expected, exported(:trips)
     end
