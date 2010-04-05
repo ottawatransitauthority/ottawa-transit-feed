@@ -36281,7 +36281,7 @@
   - RB450
   - RB430
   - RB410
-  string: 
+  string: 140 SOUTH KEYS
   route_id: "140"
 - signature: eb36f330151d10b9f9290452e44d140d
   id: 1699
@@ -36311,7 +36311,7 @@
   - RC045
   - RC060
   - RB260
-  string: 
+  string: 140 BILLINGS BRIDGE
   route_id: "140"
 - signature: b4a255ecf6f08cf095e4629685bc5788
   id: 1700
@@ -36330,7 +36330,7 @@
   - EG500
   - EG520
   - EG540
-  string: 
+  string: 124 BEACON HILL
   route_id: "124"
 - signature: cb655a3af10364879250ed01dd57be3e
   id: 1701
@@ -36363,7 +36363,7 @@
   - EF530
   - EF550
   - EF560
-  string: 
+  string: 124 BLAIR
   route_id: "124"
 - signature: 94f07d2fdcfae996dfb8624506d18284
   id: 1702
@@ -36395,7 +36395,7 @@
   - EH020
   - EH050
   - EH060
-  string: 
+  string: 128 BLACKBURN HAMLET
   route_id: "128"
 - signature: a06b446a2e7effa6eee1c0263905373c
   id: 1703
@@ -36424,7 +36424,7 @@
   - EE450
   - EE590
   - EE580
-  string: 
+  string: 129 AVIATION
   route_id: "129"
 - signature: 85407e3d234c4a6f20fdaeed9c096851
   id: 1704
@@ -36452,7 +36452,7 @@
   - EE320
   - EE350
   - EE370
-  string: 
+  string: 129 BLAIR
   route_id: "129"
 - signature: 44b71a1bd50eb9ccf6e2a5e3f8bbbacf
   id: 1705
@@ -36491,7 +36491,7 @@
   - RC045
   - RC450
   - RC470
-  string: 
+  string: 146 SOUTH KEYS
   route_id: "146"
 - signature: 9673520909b2a81295c2cdb1cc8d1717
   id: 1706
@@ -36530,7 +36530,7 @@
   - RD220
   - RD200
   - RD180
-  string: 
+  string: 146 BILLINGS BRIDGE
   route_id: "146"
 - signature: 4a9de16b7934e95808f32c3cdab0e1b9
   id: 1707
@@ -36564,7 +36564,7 @@
   - AG550
   - AG540
   - AI040
-  string: 
+  string: 148 ELMVALE
   route_id: "148"
 - signature: 8a16e33d25d1b4bb5a65b633de358d1c
   id: 1708
@@ -36599,7 +36599,7 @@
   - AK370
   - AK390
   - AK430
-  string: 
+  string: 148 BILLINGS BRIDGE
   route_id: "148"
 - signature: c33e3fc05470ae35cecaeab9d42c89a7
   id: 1709
@@ -36699,7 +36699,7 @@
   - AJ010
   - AJ015
   - AJ020
-  string: 
+  string: 16 ALTA-VISTA
   route_id: "16"
 - signature: bc01e379e5e3e64ee031bcb9e5a3ad88
   id: 1710
@@ -36798,7 +36798,7 @@
   - NI200
   - NI220
   - NI925
-  string: 
+  string: 16 LINCOLN FIELDS
   route_id: "16"
 - signature: ae81c1bf9ebb83c374f791a1485fbde3
   id: 1711
@@ -36846,7 +36846,7 @@
   - WI170
   - WI150
   - WI130
-  string: 
+  string: 160 MORGAN'S GRANT
   route_id: "160"
 - signature: 8768f5940ac6c0cad148fae416724b8d
   id: 1712
@@ -36884,7 +36884,7 @@
   - WM410
   - WM412
   - WH310
-  string: 
+  string: 160 TERRY FOX
   route_id: "160"
 - signature: a72f59c92956e8939c7ffbfd11263f86
   id: 1713
@@ -36904,7 +36904,7 @@
   - AE910
   - AE220
   - AE250
-  string: 
+  string: 891 ST LAURENT
   route_id: "891"
 - signature: 50c8298fadd31cd5508cdec80a8b6848
   id: 1714
@@ -36939,7 +36939,7 @@
   - ND090
   - ND070
   - ND050
-  string: 
+  string: 2 DOWNTOWN / CENTRE-VILLE
   route_id: "2"
 - signature: ee78c954940fd2b2d4d98f1e8bcabe43
   id: 1715
@@ -36974,7 +36974,7 @@
   - CH030
   - CI280
   - CI290
-  string: 
+  string: 2 WESTBORO
   route_id: "2"
 - signature: 901c0ac52d7f610e77bc936835262822
   id: 1716
@@ -37000,7 +37000,7 @@
   - AH230
   - AH240
   - AH260
-  string: 
+  string: 8 BILLINGS BRIDGE
   route_id: "8"
 - signature: 210eedc08457cf2ad1eb109c176b63ec
   id: 1717
@@ -37047,7 +37047,7 @@
   - AH050
   - AH090
   - AH095
-  string: 
+  string: 8 HURDMAN
   route_id: "8"
 - signature: 768802dd985923e84d52f4ca307b8ed2
   id: 1718
@@ -37066,7 +37066,7 @@
   - CA950
   - CB960
   - CB970
-  string: 
+  string: "8 #<OttawaTransitFeed::Trip:0x101107af0>#<OttawaTransitFeed::Trip:0x101107988>"
   route_id: "8"
 - signature: 9680d72b6fb55048b45d7bff422a6d93
   id: 1719
@@ -37128,7 +37128,7 @@
   - SL045
   - SL035
   - SL025
-  string: 
+  string: 95 TRIM via Jeanne d'Arc
   route_id: "95"
 - signature: 32a68b6dd1891eef11270e6909a33091
   id: 1720
@@ -37176,7 +37176,7 @@
   - ND420
   - ND400
   - ND390
-  string: 
+  string: 16 LINCOLN FIELDS
   route_id: "16"
 - signature: dc0b5b71815a33bfe8b754454ac97a7f
   id: 1721
@@ -37196,7 +37196,7 @@
   - RA955
   - RC900
   - RF900
-  string: 
+  string: "97 AIRPORT / A\xC3\xA9ROPORT"
   route_id: "97"
 - signature: be3a087b935e696db6d56f36b36bb910
   id: 1722
@@ -37227,7 +37227,7 @@
   - WH884
   - WH104
   - WH106
-  string: 
+  string: 168 168 BEAVERBROOK
   route_id: "168"
 - signature: 5819772f66b31d83400c840dabdec670
   id: 1723
@@ -37259,7 +37259,7 @@
   - WH860
   - WH864
   - WH868
-  string: 
+  string: 168 TERRY FOX
   route_id: "168"
 - signature: 2b1ddccfd1dbdd8b6c9cd2c102312e58
   id: 1724
@@ -37295,7 +37295,7 @@
   - WH400
   - WH345
   - WH340
-  string: 
+  string: 101 KANATA NORTH   NORD
   route_id: "101"
 - signature: b61bf7253f2644ecc1a028b40736ffd2
   id: 1725
@@ -37342,7 +37342,7 @@
   - NG228
   - NG230
   - NI130
-  string: 
+  string: 16 TUNNEY'S PASTURE
   route_id: "16"
 - signature: a9d778b012625bd073859d7adfe71985
   id: 1726
@@ -37380,7 +37380,7 @@
   - EH650
   - EH460
   - EH456
-  string: 
+  string: 128 HURDMAN
   route_id: "128"
 - signature: 6ff4de42dff220b924dcf8b49a3b9396
   id: 1727
@@ -37421,7 +37421,7 @@
   - NH240
   - NH260
   - NH270
-  string: 
+  string: 16 TUNNEY'S PASTURE
   route_id: "16"
 - signature: 227662eedb2ca079044714b3f8ec8bb2
   id: 1728
@@ -37463,7 +37463,7 @@
   - ND420
   - ND400
   - ND390
-  string: 
+  string: 16 CARLINGWOOD
   route_id: "16"
 - signature: e77659b0f2febcc2ab410b4d0bb80697
   id: 1729
@@ -37521,7 +37521,7 @@
   - NG280
   - NG300
   - NG310
-  string: 
+  string: 156 NEPEAN S.
   route_id: "156"
 - signature: e240a8d19b13df07400554bf9e575699
   id: 1730
@@ -37605,7 +37605,7 @@
   - EB945
   - CG360
   - CG370
-  string: 
+  string: 7 ST. LAURENT
   route_id: "7"
 - signature: 6d058c3814ea271bc557d97a3949ae98
   id: 1731
@@ -37665,7 +37665,7 @@
   - SG370
   - SG400
   - SG200
-  string: 
+  string: "156 ends at   termine \xC3\xA0 CARLINGWOOD"
   route_id: "156"
 - signature: a06481cd6829136a684c364a0e2849e6
   id: 1732
@@ -37680,7 +37680,7 @@
   - EH020
   - EH160
   - EH180
-  string: 
+  string: "128 ends at termine ar\xC3\xA9na Blackburn arena"
   route_id: "128"
 - signature: 4addb50f27ebd0ba2b6bb95d76154985
   id: 1733
@@ -37725,7 +37725,7 @@
   - CE120
   - CE140
   - CE160
-  string: 
+  string: 5 BILLINGS BRIDGE
   route_id: "5"
 - signature: 23c4bfaa466daaeada8fb6de164df966
   id: 1734
@@ -37764,7 +37764,7 @@
   - RH660
   - RH640
   - RH285
-  string: 
+  string: 144 SOUTH KEYS
   route_id: "144"
 - signature: 21ec00d2bedbcccc8ce54a3c2c26e93f
   id: 1735
@@ -37808,7 +37808,7 @@
   - RF550
   - RF570
   - RF600
-  string: 
+  string: 144 144X GLOUCESTER S.   HINDU TEMPLE
   route_id: "144"
 - signature: 9c29c9c5eaa84e4fea6d7ec2ebf32c94
   id: 1736
@@ -37834,7 +37834,7 @@
   - CD910
   - CB900
   - CB910
-  string: 
+  string: 95 BASELINE
   route_id: "95"
 - signature: 4378d18654014e5aee0896ba38eb3c07
   id: 1737
@@ -37849,7 +37849,7 @@
   - EH004
   - EI030
   - EG007
-  string: 
+  string: 128 BLAIR
   route_id: "128"
 - signature: 7dd1e1d885be2e3266f3a941ccceaed7
   id: 1738
@@ -37867,7 +37867,7 @@
   - WA850
   - WA820
   - WA822
-  string: 
+  string: 171 Barrhaven Centre
   route_id: "171"
 - signature: d1cff7ec2e4359f1b0f005d6567a91b1
   id: 1739
@@ -37884,7 +37884,7 @@
   - WA874
   - WA876
   - WA353
-  string: 
+  string: 171 STONEBRIDGE
   route_id: "171"
 - signature: c920b6024ac17be332ac9cab8cba999f
   id: 1740
@@ -37958,7 +37958,7 @@
   - NC400
   - NC380
   - NC360
-  string: 
+  string: 151 CARLINGWOOD
   route_id: "151"
 - signature: cfeef7ba56b5c87f12a060ecf7d3765e
   id: 1741
@@ -38008,7 +38008,7 @@
   - RG230
   - RG225
   - RG210
-  string: 
+  string: 40 GATINEAU / HULL
   route_id: "40"
 - signature: 254e659aac46e64dd511f2936ca28c0d
   id: 1742
@@ -38067,7 +38067,7 @@
   - SL647
   - SL653
   - SL655
-  string: 
+  string: 77 BLAIR
   route_id: "77"
 - signature: 94cc8c941dc1bf2020dab38a63323335
   id: 1743
@@ -38122,7 +38122,7 @@
   - SL647
   - SL653
   - SL655
-  string: 
+  string: 77 DOWNTOWN / CENTRE-VILLE
   route_id: "77"
 - signature: 6d87f6f89cf1af8409fa375bb5708573
   id: 1744
@@ -38183,7 +38183,7 @@
   - SZ258
   - SZ254
   - SZ246
-  string: 
+  string: 245 RIVERVIEW
   route_id: "245"
 - signature: 56368d81f44b4654f07ec6806330ea72
   id: 1745
@@ -38237,7 +38237,7 @@
   - CB910
   - CA920
   - CA930
-  string: 
+  string: 77 NEPEAN SOUTH / SUD
   route_id: "77"
 - signature: 61c25700a16d78c449b8855342da1abc
   id: 1746
@@ -38298,7 +38298,7 @@
   - SY610
   - SY590
   - SY570
-  string: 
+  string: 245 NORTH GOWER
   route_id: "245"
 - signature: 0ca69a0d94c2734a46266dfbccc13e9a
   id: 1747
@@ -38322,7 +38322,7 @@
   - EE450
   - EE590
   - EE580
-  string: 
+  string: "129 129 Special Carson   Montr\xC3\xA9al"
   route_id: "129"
 - signature: 3149c0888c94d0c5ed5d896fdfdc6866
   id: 1748
@@ -38351,7 +38351,7 @@
   - CH030
   - CH050
   - CH070
-  string: 
+  string: 4 U. CARLETON U.
   route_id: "4"
 - signature: 0620befae20a0660ed30f2055442530f
   id: 1749
@@ -38371,7 +38371,7 @@
   - RA445
   - RA970
   - RA510
-  string: 
+  string: 4 HURDMAN
   route_id: "4"
 - signature: 54de59df45d8acc6f66509c108682c69
   id: 1750
@@ -38401,7 +38401,7 @@
   - CG240
   - CG210
   - CG190
-  string: 
+  string: 4 DOWNTOWN / CENTRE-VILLE
   route_id: "4"
 - signature: 2a0a39bcc8ab11fc34b30f76172c81b0
   id: 1751
@@ -38418,7 +38418,7 @@
   - RA965
   - RA450
   - CG320
-  string: 
+  string: 4 U. CARLETON U.
   route_id: "4"
 - signature: 2fcf897419668d2ea252342c407ea342
   id: 1752
@@ -38462,7 +38462,7 @@
   - CG310
   - RB440
   - RB470
-  string: 
+  string: 117 BASELINE
   route_id: "117"
 - signature: 531dcb80f3e17a414ab43fb8a8a065ca
   id: 1753
@@ -38486,7 +38486,7 @@
   - EE400
   - EE490
   - EE520
-  string: 
+  string: 129 BLAIR
   route_id: "129"
 - signature: ffb716fd6da98937b7444c58fef1e42c
   id: 1754
@@ -38550,7 +38550,7 @@
   - WM302
   - WM300
   - WM200
-  string: 
+  string: 60 DOWNTOWN / CENTRE-VILLE
   route_id: "60"
 - signature: a0413b91a51b5947e5b0f66f55c64c62
   id: 1755
@@ -38609,7 +38609,7 @@
   - WK355
   - WK345
   - WK332
-  string: 
+  string: 61 DOWNTOWN / CENTRE-VILLE
   route_id: "61"
 - signature: 14e21b0c17f7ce217b168f29b77e63ef
   id: 1756
@@ -38664,7 +38664,7 @@
   - WH855
   - WH546
   - WH550
-  string: 
+  string: 65 DOWNTOWN / CENTRE-VILLE
   route_id: "65"
 - signature: 2aee58d2b961407677306a06d6c457b2
   id: 1757
@@ -38720,7 +38720,7 @@
   - WK400
   - WK410
   - WK413
-  string: 
+  string: 66 DOWNTOWN / CENTRE-VILLE
   route_id: "66"
 - signature: 867f37f18152adc6061e0fc1f4b93b5e
   id: 1758
@@ -38776,7 +38776,7 @@
   - WJ260
   - WJ270
   - WJ290
-  string: 
+  string: 63 DOWNTOWN / CENTRE-VILLE
   route_id: "63"
 - signature: 5f134e2104d22fc182b5db0b1b534eab
   id: 1759
@@ -38824,7 +38824,7 @@
   - WI795
   - WI790
   - WI770
-  string: 
+  string: 64 DOWNTOWN / CENTRE-VILLE
   route_id: "64"
 - signature: e3a475813dddb74ec0c15da34ea5856a
   id: 1760
@@ -38885,7 +38885,7 @@
   - WH854
   - WH852
   - WH850
-  string: 
+  string: 68 DOWNTOWN / CENTRE-VILLE
   route_id: "68"
 - signature: 2810c30650e96115976d91b08beae8e8
   id: 1761
@@ -38935,7 +38935,7 @@
   - WJ550
   - WJ570
   - WJ600
-  string: 
+  string: 62 DOWNTOWN / CENTRE-VILLE
   route_id: "62"
 - signature: 864ad0a959ff2852526b91ee300b3387
   id: 1762
@@ -38983,7 +38983,7 @@
   - EO532
   - EO143
   - EO140
-  string: 
+  string: 27 GATINEAU
   route_id: "27"
 - signature: 2cd1af494b37ce02353bf4e3d6801fbd
   id: 1763
@@ -39041,7 +39041,7 @@
   - WS240
   - WS220
   - WS215
-  string: 
+  string: 263 BLAIR
   route_id: "263"
 - signature: a402944daa13c3dc1c1c4c042ac9b32d
   id: 1764
@@ -39093,7 +39093,7 @@
   - RG252
   - RG250
   - RG230
-  string: 
+  string: 40 GATINEAU / HULL
   route_id: "40"
 - signature: dd7e91eb0be822d72c1248cd936afacf
   id: 1765
@@ -39149,7 +39149,7 @@
   - WS240
   - WS220
   - WS215
-  string: 
+  string: 263 BLAIR
   route_id: "263"
 - signature: 261c6d5b4cfba06d2a81b5273efa2e07
   id: 1766
@@ -39206,7 +39206,7 @@
   - WH855
   - WH546
   - WH550
-  string: 
+  string: 65 BLAIR
   route_id: "65"
 - signature: c3521848c8ea9a4a3a9645c17dc2e9c6
   id: 1767
@@ -39269,7 +39269,7 @@
   - WH854
   - WH852
   - WH850
-  string: 
+  string: 68 BLAIR
   route_id: "68"
 - signature: 556d112ae99777bc8989a180551e1693
   id: 1768
@@ -39318,7 +39318,7 @@
   - WS292
   - WS286
   - WS282
-  string: 
+  string: 262 BLAIR
   route_id: "262"
 - signature: 01294057814631bfbea23113743ca35e
   id: 1769
@@ -39377,7 +39377,7 @@
   - WH855
   - WH546
   - WH550
-  string: 
+  string: 65 BLAIR
   route_id: "65"
 - signature: 33ce6c7a7157f01ff1240f66e179e89b
   id: 1770
@@ -39431,7 +39431,7 @@
   - WS240
   - WS220
   - WS215
-  string: 
+  string: 263 DOWNTOWN / CENTRE-VILLE
   route_id: "263"
 - signature: 909c038b6794e01c2d2189140e018f0e
   id: 1771
@@ -39499,7 +39499,7 @@
   - WM302
   - WM300
   - WM200
-  string: 
+  string: 60 BLAIR
   route_id: "60"
 - signature: 4836e1ca6c89cc86c65469b74b354fa2
   id: 1772
@@ -39551,7 +39551,7 @@
   - WI795
   - WI790
   - WI770
-  string: 
+  string: 64 BLAIR
   route_id: "64"
 - signature: 2e8d21a0fccf64dbfe51733b4b182c74
   id: 1773
@@ -39616,7 +39616,7 @@
   - WH854
   - WH852
   - WH850
-  string: 
+  string: 68 BLAIR
   route_id: "68"
 - signature: c658112e3c61b9a470fb3e590d349d31
   id: 1774
@@ -39661,7 +39661,7 @@
   - WS292
   - WS286
   - WS282
-  string: 
+  string: 262 DOWNTOWN / CENTRE-VILLE
   route_id: "262"
 - signature: 8d394700d2a9203ae5bce229b0ce8e61
   id: 1775
@@ -39714,7 +39714,7 @@
   - WS724
   - WS713
   - WS716
-  string: 
+  string: 261 DOWNTOWN / CENTRE-VILLE
   route_id: "261"
 - signature: 0955f68f53184abcf0c7fdd855feef76
   id: 1776
@@ -39774,7 +39774,7 @@
   - WK400
   - WK410
   - WK413
-  string: 
+  string: 66 BLAIR
   route_id: "66"
 - signature: 15da505b3f75dd2f97e4cb9d5e98f27c
   id: 1777
@@ -39841,7 +39841,7 @@
   - NA425
   - NA410
   - NA345
-  string: 
+  string: 82 ALTA VISTA
   route_id: "82"
 - signature: e8ecae525d1b38c123ef5eb8b7ea446e
   id: 1778
@@ -39873,7 +39873,7 @@
   - SH315
   - SH935
   - SJ970
-  string: 
+  string: 95 Hurdman
   route_id: "95"
 - signature: d739830af2cb83bbe9eccc030b809041
   id: 1779
@@ -39908,7 +39908,7 @@
   - RA965
   - RA415
   - RA430
-  string: 
+  string: 118 BASELINE
   route_id: "118"
 - signature: 1a18587d239e915dde05cb4c37df0913
   id: 1780
@@ -39962,7 +39962,7 @@
   - CA950
   - CB960
   - CB970
-  string: 
+  string: 94 INNES (CUMBERLAND)
   route_id: "94"
 - signature: 60d3d6fed1389ffd571e8dff60f2e413
   id: 1781
@@ -39985,7 +39985,7 @@
   - CD900
   - CD955
   - CD975
-  string: 
+  string: 95 ORLEANS
   route_id: "95"
 - signature: 16e9c6e68d0c0df785f961d520f34d1f
   id: 1782
@@ -40055,7 +40055,7 @@
   - SZ242
   - SZ240
   - SZ245
-  string: 
+  string: 186 CARLINGWOOD
   route_id: "186"
 - signature: 4c6dc4c2eda70b8ea4c98ba6dc70d3ac
   id: 1783
@@ -40129,7 +40129,7 @@
   - ER680
   - ER649
   - ER645
-  string: 
+  string: 231 DOWNTOWN / CENTRE-VILLE
   route_id: "231"
 - signature: 6c1bd9581ab27dfa6cd2bf191f19aeb2
   id: 1784
@@ -40190,7 +40190,7 @@
   - WK345
   - WK332
   - WK325
-  string: 
+  string: 61 BLAIR
   route_id: "61"
 - signature: 1d7d773838b7e4440c4662904a947844
   id: 1785
@@ -40250,7 +40250,7 @@
   - WJ260
   - WJ270
   - WJ290
-  string: 
+  string: 63 BLAIR
   route_id: "63"
 - signature: 466917f6a60429c55f1c4fe77b57b247
   id: 1786
@@ -40264,7 +40264,7 @@
   - RA970
   - RA510
   - RA950
-  string: 
+  string: 140 BILLINGS BRIDGE
   route_id: "140"
 - signature: 322cea2acc0cd2c20e92b64ebcbbc07b
   id: 1787
@@ -40287,7 +40287,7 @@
   - EE400
   - EE440
   - EE460
-  string: 
+  string: 129 HURDMAN
   route_id: "129"
 - signature: 34a55d11ca89bdc63770a579a4ba611e
   id: 1788
@@ -40322,7 +40322,7 @@
   - CD050
   - CD030
   - CD015
-  string: 
+  string: 14 ST LAURENT
   route_id: "14"
 - signature: bdcc5f36723197cb5369c8f18999edfa
   id: 1789
@@ -40355,7 +40355,7 @@
   - AC180
   - AC160
   - AC140
-  string: 
+  string: 14 CARLINGTON
   route_id: "14"
 - signature: 6c020a6219115c331952c5adc3856994
   id: 1790
@@ -40399,7 +40399,7 @@
   - NG040
   - NG060
   - NG070
-  string: 
+  string: 85 BAYSHORE
   route_id: "85"
 - signature: 58e349ae161fd58e5a17a9e1aaf34d22
   id: 1791
@@ -40431,7 +40431,7 @@
   - CB910
   - CA920
   - CA930
-  string: 
+  string: "85 ends at   termine \xC3\xA0 Carling   Holland"
   route_id: "85"
 - signature: 30d80976320d2f13c2d6da56516a43f5
   id: 1792
@@ -40480,7 +40480,7 @@
   - CF550
   - CF570
   - CF590
-  string: 
+  string: 1 OTTAWA-ROCKCLIFFE
   route_id: "1"
 - signature: 8c2b37a5a8bd629dd3e6ad307a3a1f55
   id: 1793
@@ -40507,7 +40507,7 @@
   - NI920
   - NH920
   - NC930
-  string: 
+  string: 70 DOWNTOWN / CENTRE-VILLE
   route_id: "70"
 - signature: bd3c93d916150246732f20db18fcc3f7
   id: 1794
@@ -40533,7 +40533,7 @@
   - WB060
   - WB030
   - SJ185
-  string: 
+  string: 172 BAYSHORE
   route_id: "172"
 - signature: 54bea0b7b0e26025491beedde94de0ec
   id: 1795
@@ -40561,5 +40561,5 @@
   - EE320
   - EE350
   - EE370
-  string: 
+  string: 129 BLAIR
   route_id: "129"
