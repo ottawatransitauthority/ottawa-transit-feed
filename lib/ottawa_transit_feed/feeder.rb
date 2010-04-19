@@ -19,12 +19,14 @@ module OttawaTransitFeed::Feeder
 
   def import (feed)
     elapsed = Benchmark.realtime do
-      FasterCSV.foreach "#{feed}/#{feed_file}", :headers => :first_row do |row|
-        hash = row.to_hash
-        hash.values.each { |value| value.strip! if value }
-        record = new(hash)
-        record.save!
-      end
+      self.transaction do      	
+	FasterCSV.foreach "#{feed}/#{feed_file}", :headers => :first_row do |row|
+       	 hash = row.to_hash
+       	 hash.values.each { |value| value.strip! if value }
+       	 record = new(hash)
+       	 record.save!
+      	end
+     end #end transaction
     end
     "#{name}.import completed in #{elapsed}"
   end
